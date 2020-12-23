@@ -27,17 +27,17 @@ const CustomBox = styled.div`
 
 .slider{z-index:-1;}
 
-.container2 {
-	overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  height:100vh;
-}
+// .container2 {
+// 	overflow-y: scroll;
+//   scroll-snap-type: y mandatory;
+//   height:100vh;
+// }
 
 section {
-	scroll-snap-align: start;
-  border-bottom:0px solid #777 !important;
-  overflow:hidden;
-  height:100vh;
+
+  border-bottom:1px solid #777 !important;
+
+
 }
 
 .slider1{
@@ -145,7 +145,7 @@ body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
 
 
   .image-wrap {
-    width: 100%;
+    width: 60%;
     height: 100vh;
     margin: 0 auto;
     overflow: hidden;
@@ -171,7 +171,7 @@ body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
   
   @media (max-width: 48em) {
   
-    .image-wrap {height:auto !important; min-height:300px !important;}
+    .image-wrap {height:auto !important; min-height:200px !important;}
     
     .intro:before{font-size:150% !important}
     .content{flex-direction:column !important;}
@@ -183,7 +183,29 @@ body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
     .sidebar .logolink{text-align:center !important;}
   }
 
+  @media (display-mode: standalone) {
+    /* All installed PWAs */
 
+  }
+    
+  @media (hover: hover) {
+
+    section {
+      scroll-snap-align: inherit;
+      border-bottom:0px solid #777 !important;
+      overflow:auto;
+      height:100%;
+    }
+
+
+    .container2 {
+      overflow-y: auto;
+      scroll-snap-type: inherit;
+      height:100%;
+    }
+
+
+  }
 
 `
 
@@ -195,7 +217,7 @@ const HomePage = () => (
   <Layout>
    <CustomBox>
   
-  <div className="logolink" style={{textAlign:'center', position:'absolute', zIndex:'0', width:'100vw'}}><a title="Logo - Back To Home" href="/" style={{fontSize:'60px',  textDecoration:'none'}}><span class="logofirst">todd</span> <span className="logocolor">lambert</span></a></div>
+  <div className="logolink" style={{textAlign:'center', position:'absolute', zIndex:'0', width:'98vw'}}><a title="Logo - Back To Home" href="/" style={{fontSize:'60px',  textDecoration:'none'}}><span class="logofirst">todd</span> <span className="logocolor">lambert</span></a></div>
 
 
   <div className="themer" style={{display:'block', position:'fixed', right:'40px', top:'20px', zIndex:'2'}}><ThemeToggler>
@@ -219,7 +241,7 @@ const HomePage = () => (
 {/* <TouchUp /> */}
 
   
-<div className="container2" style={{position:'', top:'', height:'', display:'', overflowY:'scroll', background:'transparent'}}>
+<div className="container2" style={{position:'', top:'', height:'', display:'', overflowY:'scroll', overflowX:'hidden', background:'transparent'}}>
 
 
 
@@ -276,7 +298,7 @@ Hats worn
 <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
 <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'30px', padding:'', order:'1', position:'relative',}}>
-<Image alt="Co-worker talks about Todd Lambert" filename="hats1.png" style={{borderColor:'transparent', }} />
+<Image alt="Entrepreneur Hat - Top Hat" filename="hats1.png" style={{borderColor:'transparent', }} />
 <br />
 <h2>Entrepreneur</h2>
 <p>
@@ -294,7 +316,7 @@ Being a self-starter and self-learner are the basic fundamentals of a natural en
  <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
-<Image className="color" alt="Co-worker talks about Todd Lambert" filename="hats2.png" style={{borderColor:'transparent',}} />
+<Image className="color" alt="Webmaster Hat - Square Hat" filename="hats2.png" style={{borderColor:'transparent',}} />
 <br />
 <h2>Webmaster</h2>
 <p>
@@ -314,7 +336,7 @@ Back in the day, a webmaster learned that a full tool box was needed for web des
  <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'30px', padding:'', order:'1', position:'relative',}}>
-<Image className="color" alt="Co-worker talks about Todd Lambert" filename="hats3.png" style={{borderColor:'transparent',}} />
+<Image className="color" alt="Designer Hat - Beret" filename="hats3.png" style={{borderColor:'transparent',}} />
 <br />
 <h2>Designer</h2>
 <p>
@@ -349,7 +371,7 @@ Over the years I&apos;ve spent inordinate amounts of time learning Typography, S
  <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
-<Image alt="Co-worker talks about Todd Lambert" filename="hats4.png" style={{borderColor:'transparent',}} />
+<Image alt="Developer Hat - Beanie" filename="hats4.png" style={{borderColor:'transparent',}} />
 <br />
 <h2>Developer</h2>
 <p>
@@ -365,7 +387,7 @@ As the Internet became more complicated I immersed myself in different programmi
  <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
-<Image alt="Co-worker talks about Todd Lambert" filename="hats5.png" style={{borderColor:'transparent',}} />
+<Image alt="Marketer Hat - Ball Cap" filename="hats5.png" style={{borderColor:'transparent',}} />
 <br />
 <h2>Marketer</h2>
 <p>
@@ -382,7 +404,7 @@ I&apos;ve been on the Internet since the beginning. I&apos;ve become adept at de
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
-<Image alt="Co-worker talks about Todd Lambert" filename="hats6.png" style={{borderColor:'transparent',}} />
+<Image alt="Analyst Hat - Fedora" filename="hats6.png" style={{borderColor:'transparent',}} />
 <br />
 <h2>Analyst</h2>
 <p>
@@ -434,8 +456,13 @@ Success online is not simply throwing numbers(visitors) at something. I&apos;ve 
 
 
 
+<div className="container3" style={{}}>
+<h3 className="logotype" style={{textAlign:'center', marginTop:'50px', fontSize:'250%',}}>
+Resume
+</h3>
+</div>
 
-<section className="child" style={{position:'relative', height:'1200px', paddingTop:'0', fontSize:'100%', background:'transparent', overflowY:'auto', display:'flex', flexWrap:'nowrap'}}>
+<section className="child" style={{position:'relative', height:'', paddingTop:'0', fontSize:'100%', background:'transparent', overflowY:'auto', overflowX:'hidden', display:'flex', flexWrap:'nowrap'}}>
 
 
 <div className=" outer1 section1" style={{paddingTop:'100px', height:'', background:'transparent'}}>
