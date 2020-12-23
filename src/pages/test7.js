@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/Layout-noc'
+import Layout from '../components/Layout'
 import Footer from '../components/Footer'
 // import { Link } from 'gatsby'
 import ScrollAnimation from 'react-animate-on-scroll'
@@ -17,54 +17,7 @@ const CustomBox = styled.div`
 .spacer99{height:99vh; display:block;}
 
 
-.progress{position:absolute; top:80vh; left:100px; border:1px solid yellow; z-index:1;}
 
-.slide:nth-child(1) {
-  -webkit-animation: fade 24s 0s infinite;
-  z-index:2;
-}
-
-.slide:nth-child(2) {
-  -webkit-animation: fade 24s 6s infinite;
-  z-index:1;
-}
-
-.slide:nth-child(3) {
-  -webkit-animation: fade 0s 0s infinite;
-  z-index:0;
-}
-
-
-.slider{z-index:-1;}
-
-
-//  SLIDE
-
-
-
-#vidpop {
-  display: block;
-  text-align:center;
-}
-
-label + input[type=checkbox]{
-display:none !important;
-} 
- 
-input[type=checkbox]:checked + label div{
-  transform:rotate(0) !important; transform: scale(1.2) !important; width:40vw !important; position:relative !important; top:-10vh !important; left:0 !important; transition: all 2s ease;
-  z-index:1;
-} 
-
-input[type=checkbox]:checked + label div label{display:block !important; cursor:pointer;}
-
-
-#vid-toggle:checked + #vidpop .sub{display:none !important;}
-
-#vid-open{
-  position:absolute; bottom:0; display:block; width:100%; height:100%;  z-index:1; cursor:pointer;
-  // background:#fff;
-}
 
 
 
@@ -112,7 +65,7 @@ section {
 
 
 
-const Test6 = () => (
+const Test7 = () => (
   <Layout>
    <CustomBox>
   
@@ -169,7 +122,7 @@ const Test6 = () => (
   </Layout>
 )
 
-export default Test6
+export default Test7
 
 
 
