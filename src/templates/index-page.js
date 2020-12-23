@@ -27,11 +27,11 @@ const CustomBox = styled.div`
 
 .slider{z-index:-1;}
 
-// .container2 {
-// 	overflow-y: scroll;
-//   scroll-snap-type: y mandatory;
-//   height:100vh;
-// }
+.container2 {
+	overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height:100vh;
+}
 
 section {
 
@@ -281,7 +281,7 @@ const HomePage = () => (
 
 
  
- <section className="child about1 outer1 section" style={{position:'relative', height:'2000px', paddingTop:'100px', overflow:'auto'}}>
+ <section className="child about1 outer1 section" style={{position:'relative', paddingTop:'100px', overflow:'auto'}}>
  
  {/* SKILLS TIMELINE */}
 
