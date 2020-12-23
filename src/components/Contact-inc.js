@@ -61,7 +61,7 @@ export default class Contact extends React.Component {
       
         <section className="section">
           <div className="container innerpanel" style={{padding: '0',}}>
-            <div className="content" style={{padding: '0 0 15px 0'}}>
+            <div className="content" style={{padding: '15px 0 15px 0'}}>
 
               
 
@@ -77,8 +77,8 @@ export default class Contact extends React.Component {
                 id="contact-inc-form"
               >
 
-<h2 className="" style={{textAlign:'center', fontSize:'180%',}}>
-Schedule your free consultation today:
+<h2 className="" style={{textAlign:'center', fontSize:'180%', margin:''}}>
+I love it when you fill this out!:
 </h2>
 
                
@@ -148,7 +148,7 @@ Schedule your free consultation today:
                   </div>
                   </div>
                 
-                <div style={{fontSize: '70%', padding: '0 3%', margin: '0 0 1rem 0', textAlign: 'center',}}> <label htmlFor={'consent'}><input type="checkbox" value={'given'} name={'consent'} required={true} style={{transform: 'scale(2)', margin: '0 10px 0 0', padding: '0',}} />  I want to communicate by email.</label></div>
+                {/* <div style={{fontSize: '70%', padding: '0 3%', margin: '0 0 1rem 0', textAlign: 'center',}}> <label htmlFor={'consent'}><input type="checkbox" value={'given'} name={'consent'} required={true} style={{transform: 'scale(2)', margin: '0 10px 0 0', padding: '0',}} />  I want to communicate by email.</label></div> */}
                
 <div className="special grad"  style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', position:'relative', width:'230px', margin:'0 auto', padding:'0 1rem 0px 1rem',}}>
                 

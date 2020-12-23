@@ -6914,6 +6914,16 @@ follow-redirects@^1.0.0, follow-redirects@^1.10.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.1.tgz#5f69b813376cee4fd0474a3aba835df04ab763b7"
   integrity sha512-SSG5xmZh1mkPGyKzjZP8zLjltIfpW32Y5QpdNJyjcfGxK3qo3NDDkZOZSFiGn1A6SclQxY9GzEwAHQ3dmYRWpg==
 
+fontsource-hammersmith-one@^3.1.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/fontsource-hammersmith-one/-/fontsource-hammersmith-one-3.1.5.tgz#d18328d790eb3eb5da62884ba543ab9631eb8367"
+  integrity sha512-CeynoM2GCv38VBNd/fQmkGf/NFDrTy2JBtr+fVRprNd7CgscB9AQ8FmmT8e4z+WfXdCANK5/KLFeVXBPA2mlrQ==
+
+fontsource-lobster-two@^3.1.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/fontsource-lobster-two/-/fontsource-lobster-two-3.1.5.tgz#2ab3485b21d0b7b5450ffeea6d4a8f3f2665787b"
+  integrity sha512-6HzO/oPOba852+AlhMGrBpu4vRWmH6Y0atwNyicBz3EshHe/vCFCGzvJ+J0WeEdVik1emwsaeAxPteH7dx7Utg==
+
 for-each@^0.3.3:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/for-each/-/for-each-0.3.3.tgz#69b447e88a0a5d32c3e7084f3f1710034b21376e"
@@ -17086,11 +17096,6 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-
-typeface-pt-sans@0.0.72:
-  version "0.0.72"
-  resolved "https://registry.yarnpkg.com/typeface-pt-sans/-/typeface-pt-sans-0.0.72.tgz#c47d198510b2ed1272ad6329cf1ae5f782ebf4cf"
-  integrity sha512-eDMv72dE+0dwjIDltzZAUusF+cDgOfZKazHZK08uKCOG/BEzY6oc/WqtQLN71j5/voTXFi5M4+nXNbZnCayDMQ==
 
 ua-parser-js@^0.7.18:
   version "0.7.23"

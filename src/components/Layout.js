@@ -6,7 +6,9 @@ import Navbar from '../components/Navbar2'
 // import Installer from '../components/Install'
 import PopContact from '../components/PopContact'
 import config from '../../config'
-import 'typeface-pt-sans'
+// import 'typeface-pt-sans'
+import "fontsource-lobster-two"
+import "fontsource-hammersmith-one"
 import "../css/index.scss"
 // import Consent from '../components/Consent'
 

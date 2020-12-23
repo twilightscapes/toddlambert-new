@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../img/ad2inc-logo-round.svg'
-import Headroom from "react-headroom"
+// import Headroom from "react-headroom"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import { GoArrowUp } from 'react-icons/go';
 import { WiDaySunny } from 'react-icons/wi';
@@ -143,6 +143,105 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .header{background:transparent !important; width:auto;}
 .modal-btn{box-shadow:none;}
 .modal-btn:hover{background:#222;}
+
+
+
+
+.intro:before{
+	content: "About Twilightscapes";
+position:absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
+}
+
+
+
+.primary p{margin:0 0 .5rem 0 !important; padding:0!important;}
+
+.edu li{margin:2rem 0;}
+.todd-headline{margin:0 0 1rem 0;}
+
+h2{color:#dd4000}
+
+
+
+
+.outer .container{width:100%; height:auto; margin:1rem auto;}
+
+.imgbox img{border-radius:12px; border:0px solid #000;}
+
+.spacer33{height:15vh;}
+.spacer66{height:66vh;}
+.spacer99{height:99vh;}
+
+p{line-height:150%;}
+
+
+body.light .speech p span{color:#fff;}
+
+.outer{padding:0 11%; border:0px solid red; padding-top:2rem !important;}
+.split div:first-child{padding-right:1rem; border:0px solid yellow;}
+.split div:last-child{padding-left:1rem; border:0px solid blue;}
+
+@media (min-width: 48rem) and (max-width: 1000px) { 
+	
+ }
+
+
+@media (max-width: 48rem) {
+.split{flex-direction:column !important; width:100% !important;}
+
+.split div{width:100% !important}
+.split div:first-child{order:1}
+.split div:last-child{order:2}
+
+.outer{padding:5%; border:0px solid red; }
+.split div:first-child{padding-right:0rem; border:0px solid yellow;}
+.split div:last-child{padding-left:0rem; border:0px solid blue;}
+
+.spacer33, .spacer66, .spacer99{height:15vh;}
+
+.split.nowrap{flex-direction:row !important; width:100% !important;}
+.split.nowrap div:first-child{order:2}
+.split.nowrap div:last-child{order:1}
+.split.nowrap .speech{border:1px solid;}
+
+.split.nowrap div.speech{width: 60vw !important;}
+.split.nowrap div.imgbox{width:30vw !important; margin-left:1rem !important;}
+
+
+
+.intro:before{font-size:200%;}
+
+// body.dark, body.dark .container{background-color:#fff !important;}
+body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
+
+
+
+
+
+}
+
+@media (min-width: 58rem) {
+	.outer{padding:0 14%;}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 `
 
 const Navbar2 = class extends React.Component {
@@ -153,31 +252,29 @@ const Navbar2 = class extends React.Component {
     return (
 	    
       <CustomBox>         
-<Headroom style={{ zIndex: '5', }}></Headroom>
+{/* <Headroom style={{ zIndex: '5', }}></Headroom> */}
 
 
-<header className="header" style={{zIndex:'2', position:'fixed'}}>
-    <Link to="/" className="logolinker" title="Logo - Back To Home">
-    <img id="logo" className="logo rollIn" src={logo} alt="Ad2Inc Logo" style={{position:'fixed',}} />
+{/* <header className="header" style={{zIndex:'2', position:'relative'}}> */}
+
+
+      
+
+      
+
+
+    {/* <img id="logo" className="logo rollIn" src={logo} alt="Ad2Inc Logo" style={{position:'fixed',}} /> */}
     {/* <Image alt="Temp Graphic" filename="ad2inc-logo-round.png" /> */}
-   </Link>
-</header>
 
-  
- 
- 
-   <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
-  <label htmlFor="openSidebarMenu" className="sidebarIconToggle">
-  {/* <span className="txtshadow" style={{textShadow:'2px', color:'#fff',}}>MENU</span> */}
-    <div className="spinner diagonal part-1"></div>
-    <div className="spinner horizontal"></div>
-    <div className="spinner diagonal part-2"></div>
-  </label>
-
-   <div id="sidebarMenu">
+{/* </header> */}
 
 
-   <div className="themer" style={{display:'block', right:'140px', top:'20px'}}><ThemeToggler>
+<div style={{display:'flex', justifyContenr:'center'}}>
+
+<a class="logolink" title="Logo - Back To Home" href="/" style={{textAlign:'center', fontSize:'80px', marginLeft:'10vw', marginTop:'2vh', textDecoration:'none'}}><span class="logofirst">todd</span> <span class="logocolor">lambert</span></a>
+
+
+<div className="themer" style={{display:'block', position:'fixed', right:'40px', top:'20px', zIndex:'2'}}><ThemeToggler>
         {({ theme, toggleTheme }) => (
           <div className="themeSlide">
             
@@ -190,51 +287,16 @@ const Navbar2 = class extends React.Component {
           <label htmlFor="themeSlide" style={{color:'#222', textAlign:'center', padding:'0',}}><WiDaySunny /></label></div>
         )}
       </ThemeToggler></div>
+ 
+</div>
 
 
 
-    <ul className="sidebarMenuInner">
-      {/* <li>Todd Lambert <span>Web Developer</span></li> */}
-
-      <li>
-              <Link className="navbar-item txtshadow" to="/about/">
-                Who We Are <span>Learn more about us</span>
-              </Link>
-      </li>
-
-      <li>
-              <Link className="navbar-item txtshadow" to="/services/">
-                What We Do <span>Everything we offer</span>
-              </Link>
-      </li>
+  
 
 
-      <li>
-      <Link id="portfolio" className="navbar-item txtshadow" to="/portfolio/">Where You’ve Seen Us <span>Take a look at our stuff</span></Link>
-       </li>
 
-
-       <li>
-              <Link id="casestudies" className="navbar-item txtshadow" to="/case-study/">
-                How We Do it <span>Go behind the curtains</span>
-              </Link>
-      </li>
-
-    
-
-      <li>
-              <Link className="navbar-item txtshadow" to="/blog/">
-                What We're Up To <span>View our blog</span>
-              </Link>
-      </li>
-
-      <li>
-             <label className="modal-btn txtshadow" htmlFor="modal-toggle" style={{textShadow: '1px 2px 0px black',}}>Contact Us <span>Get started today!</span></label> 
-      </li>
-
-    </ul>
-  </div>
-            <PopContact />
+  
             
       
       
@@ -243,7 +305,7 @@ const Navbar2 = class extends React.Component {
     
       
       
-      <a href="#topofpage" title="Back To Top" className="back-to-top "><GoArrowUp /></a>
+
       
 
 </CustomBox>

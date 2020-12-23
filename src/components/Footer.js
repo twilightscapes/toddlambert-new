@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { FaFacebookSquare, FaTwitterSquare, FaYoutubeSquare } from 'react-icons/fa'
+import { FaFacebookSquare, FaLinkedin, FaTwitterSquare, FaInstagram, FaPinterestSquare, FaYoutubeSquare } from 'react-icons/fa'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 import Consent from '../components/Consent'
@@ -30,17 +30,15 @@ const Footer = class extends React.Component {
  
 
 
-<ul className="socialmenu" style={{textAlign:'center', justifyContent:'center', margin:'3rem 0'}}>
+        <ul className="socialmenu" style={{textAlign:'center', justifyContent:'center', margin:'3rem 0'}}>
+  <li className="socialtext"><h3>I&apos;m<br />Social</h3></li>
+<li><a className="social"  href="https://facebook.com/twilightscapes" alt="Facebook" title="Facebook"><FaFacebookSquare /><span>Facebook</span></a></li>
+<li style={{display: '',}}><a className="social" href="https://www.linkedin.com/in/toddlambert" alt="LinkIn" title="LinkedIn"><FaLinkedin /><span>LinkedIn</span></a></li>
+<li><a className="social" href="https://twitter.com/toddlambert" alt="Twitter" title="Twitter"><FaTwitterSquare /><span>Twitter</span></a></li>
+<li><a className="social" href="https://www.instagram.com/twilightscapes" alt="Instagram" title="Instagram"><FaInstagram /><span>Instagram</span></a></li>
+<li style={{display: 'none',}}><a className="social" href="https://www.pinterest.com/twilightscapes/" alt="Pinterest" title="Pinterest"><FaPinterestSquare /><span>Pinterest</span></a></li>
 
-  <li stye={{margin:'5px 8px 0 0'}}><span>We&apos;re <br />Social: </span></li>
-<li>&nbsp;&nbsp;&nbsp;</li>
-<li><a className="social"  href="http://www.facebook.com/Ad2Inc" alt="Facebook" title="Facebook"><FaFacebookSquare /><span>Facebook</span></a></li>
-{/* <li><a className="social" href="https://linkedin.com" alt="LinkIn" title="LinkedIn"><FaLinkedin /><span>LinkedIn</span></a></li> */}
-<li><a className="social" href="https://twitter.com/Ad2Inc" alt="Twitter" title="Twitter"><FaTwitterSquare /><span>Twitter</span></a></li>
-{/* <li><a className="social" href="https://instagram.com" alt="Instagram" title="Instagram"><FaInstagram /><span>Instagram</span></a></li> */}
-
-
-<li><a className="social" href="https://www.youtube.com/channel/UCxvvY1iCEHnjQnl1ejKwcwQ" alt="YouTube" title="YouTube"><FaYoutubeSquare /><span>YouTube</span></a></li>
+<li><a className="social" href="https://www.youtube.com/channel/UCccK2S9xrcLnCR3dTuUwsxQ" alt="YouTube" title="YouTube"><FaYoutubeSquare /><span>YouTube</span></a></li>
 </ul>
 
 
@@ -51,7 +49,7 @@ const Footer = class extends React.Component {
 
 
 
-<div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: ''}}>Copyright &copy; {(new Date().getFullYear())} Ad2Inc.</div>
+<div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: ''}}>Copyright &copy; {(new Date().getFullYear())} Todd Lambert - Built with Gatsby on Netlify</div>
         </div>
         
       </footer>
