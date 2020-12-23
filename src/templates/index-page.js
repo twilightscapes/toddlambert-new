@@ -34,10 +34,10 @@ const CustomBox = styled.div`
 }
 
 section {
-
-  border-bottom:1px solid #777 !important;
-
-
+  scroll-snap-type: y mandatory;
+  border-bottom:0px solid #777 !important;
+  height:100vh;
+	overflow-y: scroll;
 }
 
 .slider1{
@@ -192,7 +192,7 @@ body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
 
     section {
       scroll-snap-type: none;
-      border-bottom:0px solid #777 !important;
+      border-bottom:1px solid #777 !important;
       overflow:auto;
       height:100%;
     }
