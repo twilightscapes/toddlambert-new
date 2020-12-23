@@ -191,7 +191,7 @@ body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
   @media (hover: hover) {
 
     section {
-      scroll-snap-align: inherit;
+      scroll-snap-type: none;
       border-bottom:0px solid #777 !important;
       overflow:auto;
       height:100%;
@@ -200,12 +200,15 @@ body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
 
     .container2 {
       overflow-y: auto;
-      scroll-snap-type: inherit;
+      scroll-snap-type: none;
       height:100%;
     }
 
 
   }
+
+
+
 
 `
 
