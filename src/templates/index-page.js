@@ -78,10 +78,10 @@ section {
 
 h2{color:#dd4000}
 
+.primary{padding:0;}
 
 
-
-.outer .container{width:100%; height:auto; margin:1rem auto;}
+.outer .container{width:100%; height:auto; margin:0 auto;}
 
 .imgbox img{border-radius:12px; border:0px solid #000;}
 
@@ -104,7 +104,7 @@ body.light .speech p span{color:#fff;}
 
 
 @media (max-width: 48rem) {
-.split{flex-direction:column !important; width:100% !important;}
+.split{flex-direction:row !important; width:100% !important;}
 
 .split div{width:100% !important}
 .split div:first-child{order:1}
@@ -144,6 +144,47 @@ body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
 
 
 
+  .image-wrap {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .image-wrap img {
+    width: 100vw;
+    z-index:0;
+  }
+  
+  
+  
+  
+  @media (min-width: 48em) {
+  
+    .boom1{font-size:380% !important;}
+    .boom2{font-size:250% !important;}
+    .boom3{font-size:380% !important;}
+    .boom4{font-size:280% !important;}
+  
+  }
+  
+  @media (max-width: 48em) {
+  
+    .image-wrap {height:auto !important; min-height:300px !important;}
+    
+    .intro:before{font-size:150% !important}
+    .content{flex-direction:column !important;}
+    .content .stack{width:100% !important; margin:0 !important; background:tranparent !important;}
+    .pitch{font-size:250% !important; text-align:center;}
+    .split {display:block !important; width:100% !important; }
+    .split div{max-width:100% !important; background:tranparent !important;}
+    .sidebar{margin:2rem 0;}
+    .sidebar .logolink{text-align:center !important;}
+  }
+
+
+
 `
 
 
@@ -154,7 +195,7 @@ const HomePage = () => (
   <Layout>
    <CustomBox>
   
-  <div className="logolink" style={{textAlign:'center', position:'absolute', width:'100vw'}}><a title="Logo - Back To Home" href="/" style={{fontSize:'60px',  textDecoration:'none'}}><span class="logofirst">todd</span> <span className="logocolor">lambert</span></a></div>
+  <div className="logolink" style={{textAlign:'center', position:'absolute', zIndex:'0', width:'100vw'}}><a title="Logo - Back To Home" href="/" style={{fontSize:'60px',  textDecoration:'none'}}><span class="logofirst">todd</span> <span className="logocolor">lambert</span></a></div>
 
 
   <div className="themer" style={{display:'block', position:'fixed', right:'40px', top:'20px', zIndex:'2'}}><ThemeToggler>
@@ -213,196 +254,179 @@ const HomePage = () => (
 
 {/*  Panel 3 */}
 
-<section className="child about1 outer section" style={{position:'relative', height:'100vh', paddingTop:'100px', overflow:''}}>
 
-
-
-
-<div className="container" style={{margin:'50px',}}>
-<h3 className="logotype" style={{textAlign:'center', fontSize:'250%',}}>
-Portfolio
-</h3>
-</div>
-
-
-
-<div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
-
-
-<div className="container speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative', boxShadow: '0px 0px 5px 0px black', }}>
-
-<p>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br />
-
-My experience has taught me that good design is not created on a spur of the moment, nor does it come naturally. Good design is a thorough and interative process with site visitors in mind foremost. Good design is identifying a problem for those visitors and removing that problem.
-</p>
-<h5>- Todd Lambert</h5>
-</div>
-
-
-  
-
-<div className="imgbox grad" style={{border:'4px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'1rem', overflow:'hidden'}}><Image alt="Co-worker talks about Todd Lambert" filename="todd-toon.png" style={{borderColor:'transparent',}} />
-<div className="txtshadow" style={{position:'absolute', left:'0', bottom:'5px', fontSize:'70%', color:'#ddd', textAlign:'center', width:'100%',}}>Todd Lambert</div>
-</div>
-
-
- </div>
- </section>
  
- <section className="child about1 outer section" style={{position:'relative', height:'100vh', paddingTop:'100px', overflow:''}}>
+ <section className="child about1 outer1 section" style={{position:'relative', height:'2000px', paddingTop:'100px', overflow:'auto'}}>
  
  {/* SKILLS TIMELINE */}
 
-<div className="container">
+<div className="container1" style={{}}>
 <h3 className="logotype" style={{textAlign:'center', marginTop:'50px', fontSize:'250%',}}>
 Hats worn
 </h3>
 </div>
 
+<div style={{ display:'flex',
+  flexWrap: 'wrap',
+  flexDirection: 'row',
+  justifyContent: 'spaceAround',
+  alignItems: 'auto',
+  alignContent: 'flexEnd',}}>
 
-<div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
- <ScrollAnimation animateIn="slideInLeft" animateOut="" animateOnce={true} delay={0} style={{width:'70%', zIndex:'1',}}>    
-<div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
+<div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
+<div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'30px', padding:'', order:'1', position:'relative',}}>
+<Image alt="Co-worker talks about Todd Lambert" filename="hats1.png" style={{borderColor:'transparent', }} />
+<br />
 <h2>Entrepreneur</h2>
 <p>
 Being a self-starter and self-learner are the basic fundamentals of a natural entrepreneur. I&apos;ve been involved both as a partner and a consultant to many businesses and I am able to see the forest through the trees, while keeping an eye on the bottom-line.
 </p>
 
 </div>
-</ScrollAnimation>
 
- <ScrollAnimation animateIn="slideInRight" animateOut="" animateOnce={true} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
-
-<Image alt="Co-worker talks about Todd Lambert" filename="hats1.png" style={{borderColor:'transparent',}} />
-
-</ScrollAnimation>
  </div>
  
  
  
  
  
- <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
- 
-  <ScrollAnimation animateIn="slideInLeft" animateOut="" animateOnce={true} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
+ <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
+ <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 <Image className="color" alt="Co-worker talks about Todd Lambert" filename="hats2.png" style={{borderColor:'transparent',}} />
-
-</ScrollAnimation>
-
-
- <ScrollAnimation animateIn="slideInRight" animateOut="" animateOnce={true} delay={0} style={{width:'70%', zIndex:'1',}}>    
-<div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
-
+<br />
 <h2>Webmaster</h2>
 <p>
 Back in the day, a webmaster learned that a full tool box was needed for web design and development. I learned UNIX, IIS, TCP/IP, Cpanel, and PHPMyadmin while entertaining myself primarily in the CGI-Bin directory.
 </p>
 
 </div>
-</ScrollAnimation>
- </div>
- 
- 
- 
- 
- <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
- <ScrollAnimation animateIn="slideInLeft" animateOut="" animateOnce={true} delay={0} style={{width:'70%', zIndex:'1',}}>    
-<div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
+ </div>
+
+
+
+ 
+
+ 
+ 
+ <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
+
+ <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'30px', padding:'', order:'1', position:'relative',}}>
+<Image className="color" alt="Co-worker talks about Todd Lambert" filename="hats3.png" style={{borderColor:'transparent',}} />
+<br />
 <h2>Designer</h2>
 <p>
 Over the years I&apos;ve spent inordinate amounts of time learning Typography, Space and Composition. Learning is my personal design theory and I still strive to learn something new each day by trying things.
 </p>
 
 </div>
-</ScrollAnimation>
 
- <ScrollAnimation animateIn="slideInRight" animateOut="" animateOnce={true} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
-
-<Image className="color" alt="Co-worker talks about Todd Lambert" filename="hats3.png" style={{borderColor:'transparent',}} />
-
-</ScrollAnimation>
  </div>
- 
- 
- 
-  <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
- 
-  <ScrollAnimation animateIn="slideInLeft" animateOut="" animateOnce={true} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
 
+ 
+  </div>
+{/* end of first row */}
+
+
+<div style={{ display:'flex',
+  flexWrap: 'wrap',
+  flexDirection: 'row',
+  justifyContent: 'spaceAround',
+  alignItems: 'auto',
+  alignContent: 'flexEnd',}}>
+
+
+
+
+
+
+
+
+
+
+ <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
+
+ <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 <Image alt="Co-worker talks about Todd Lambert" filename="hats4.png" style={{borderColor:'transparent',}} />
-
-</ScrollAnimation>
-
-
- <ScrollAnimation animateIn="slideInRight" animateOut="" animateOnce={true} delay={0} style={{width:'70%', zIndex:'1',}}>    
-<div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
-
+<br />
 <h2>Developer</h2>
 <p>
 As the Internet became more complicated I immersed myself in different programming languages and countless environments. Learning to adapt design to logic was a major accomplishment and one that I still work at today.
 </p>
 
 </div>
-</ScrollAnimation>
+
  </div>
  
  
  
-  <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
- <ScrollAnimation animateIn="slideInLeft" animateOut="" animateOnce={true} delay={0} style={{width:'70%', zIndex:'1',}}>    
-<div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
+ <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
+ <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
+<Image alt="Co-worker talks about Todd Lambert" filename="hats5.png" style={{borderColor:'transparent',}} />
+<br />
 <h2>Marketer</h2>
 <p>
 I&apos;ve been on the Internet since the beginning. I&apos;ve become adept at determining what people wanted to see and where. What information or answer they were searching for, became the catalyst of numerous ad campaigns and my mission for my clients.
 </p>
 
 </div>
-</ScrollAnimation>
 
- <ScrollAnimation animateIn="slideInRight" animateOut="" animateOnce={true} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
-
-<Image alt="Co-worker talks about Todd Lambert" filename="hats5.png" style={{borderColor:'transparent',}} />
-
-</ScrollAnimation>
  </div>
  
  
- <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
- 
-  <ScrollAnimation animateIn="slideInLeft" animateOut="" animateOnce={true} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
+
+ <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
+
+ <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <Image alt="Co-worker talks about Todd Lambert" filename="hats6.png" style={{borderColor:'transparent',}} />
-
-</ScrollAnimation>
-
-
- <ScrollAnimation animateIn="slideInRight" animateOut="" animateOnce={true} delay={0} style={{width:'70%', zIndex:'1',}}>    
-<div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
-
+<br />
 <h2>Analyst</h2>
 <p>
 Success online is not simply throwing numbers(visitors) at something. I&apos;ve learned to use site analytics to drive the direction of design and development projects creating a prove-it-or-lose-it type of mantra that defines performance and usability.
 </p>
 
 </div>
-</ScrollAnimation>
+
  </div>
+
+
+
+
+</div>
+
+ {/* <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
+ 
+  
+
+<Image alt="Co-worker talks about Todd Lambert" filename="hats6.png" style={{borderColor:'transparent',}} />
+
+
+
+   
+<div className="container speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
+
+<h2>Partner</h2>
+<p>
+Success online is not simply throwing numbers(visitors) at something. I&apos;ve learned to use site analytics to drive the direction of design and development projects creating a prove-it-or-lose-it type of mantra that defines performance and usability.
+</p>
+
+
+
+</div>
+
+ </div> */}
+
+
  {/* SKILLS TIMELINE */}
 
 
 
 
-<div className="container">
-<h3 className="logotype" style={{textAlign:'center', fontSize:'250%',}}>
-spotlight
-</h3>
-</div>
+
 
 
 
@@ -411,23 +435,19 @@ spotlight
 
 
 
-<section className="child" style={{position:'relative', height:'100vh', paddingTop:'100px', overflow:''}}>
+<section className="child" style={{position:'relative', height:'1200px', paddingTop:'0', fontSize:'100%', background:'transparent', overflowY:'auto', display:'flex', flexWrap:'nowrap'}}>
 
 
-<div className=" outer section" style={{paddingTop:'0', overflow:'scrollY',}}>
-
-
-<div className="container" style={{margin:'50px',}}>
-<h3 className="logotype" style={{textAlign:'center', fontSize:'250%',}}>
-Resume
-</h3>
-</div>
-
-<div className="" style={{display:'flex', justifyContent:'center', alignItems:'', position:'relative', width:'100%', margin:'0 auto',}}>
+<div className=" outer1 section1" style={{paddingTop:'100px', height:'', background:'transparent'}}>
 
 
 
-<div className="primary  " style={{color:'#444', }}>
+
+<div className="" style={{display:'flex', justifyContent:'center', alignItems:'', position:'relative', width:'100%', margin:'0 2vw', background:'transparent'}}>
+
+
+
+<div className="primary1  " style={{color:'', }}>
 
 {/* <h3 className="logotype printonly" style={{textAlign:'left', fontSize:'250%', height:'50px',}}>
 Lambert
@@ -478,7 +498,7 @@ High School General Courses - Diploma</li>
 </div>
 
 
-<div className="secondary cf p-left" style={{color:'#444',}}>
+<div className="secondary1 cf p-left" style={{color:'', margin:'0 5vw',}}>
 {/* <h3 className="printonly" style={{textAlign:'right', height:'50px', fontSize:'150%',}}>(228) 239-6088
 </h3>  
 	 */}
@@ -518,9 +538,9 @@ Responsible for site architecture, design, graphics, programming, copywriting/ed
 </div>
 
  </div>
-
+ {/* <BgImage filename="resume-bg1.png" style={{padding:'',}} /> */}
 </div>
-<BgImage filename="resume-bg1.png" style={{padding:'',}} />
+
 </section>
 {/* Panel 3 */}
 
@@ -530,7 +550,7 @@ Responsible for site architecture, design, graphics, programming, copywriting/ed
 
 
 
-<section className="child" style={{position:'relative', height:'100vh', zIndex:'3', paddingTop:'100px',}}>
+<section className="child" style={{position:'relative', height:'auto', zIndex:'', paddingTop:'100px',}}>
   <div className="outer" style={{margin:'0 0'}}><a href="#portfolio"> Portfolio</a> <Contact /></div> 
  </section>
 

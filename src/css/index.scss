@@ -22,12 +22,12 @@ $red: #ff0000;
 
 
 
-.header .logolink {
+ .logolink {
   text-decoration: none;
   background: none;
   height: 100%;
   max-width:inherit !important;
-  margin-left:50px;
+
 }
 
 .logocolor {
@@ -41,7 +41,7 @@ $red: #ff0000;
 }
 
 .logocolor:after, .logocolor:before {
-  color: #333;
+  color: #666;
   font-size: 120%;
   position: absolute;
   top: -20%;
@@ -55,7 +55,7 @@ $red: #ff0000;
 
 .logolink {
   font-family: Lobster Two;
-  color: #333;
+  color: #666;
   letter-spacing: 1px;
   text-transform: lowercase;
   font-weight: 400;
@@ -64,18 +64,18 @@ $red: #ff0000;
 
 .logolink {
   font-size: 390%;
-  text-shadow:0 1px 4px #fff
+  text-shadow:0 2px 0px #fff
 }
 
 .logofirst {
-  padding-right: 6px;
+  padding-right: 12px;
   position: relative;
-  color:#333
+  color:#999
 }
 
 .logofirst:before {
   content: " . ";
-  color: #333;
+  color: #999;
   position: absolute;
   left:-10%
 }
@@ -83,7 +83,7 @@ $red: #ff0000;
 .logotype {
   font-family: Lobster Two;
   color: #dd4000;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-transform: lowercase;
   font-weight: 400;
   position: relative;
@@ -92,19 +92,19 @@ $red: #ff0000;
 
 .logotype:before {
   content: ".todd {";
-  color: #333;
-  letter-spacing:1px
+  color: #999;
+  letter-spacing:2px;
 }
 
 .logotype:after {
   content: "}";
-  color: #333;
-  margin-left:1%
+  color: #666;
+  margin-left:3px;
 }
 
 body.dark .logotype:after, body.dark .logotype:before {
-  color: #fff;
-  text-shadow:0 1px 0 #dd4000
+  color: #999;
+  text-shadow:0 1px 0 #fff
 }
 
 
@@ -1299,14 +1299,14 @@ body.dark .themeSlide input[type=checkbox] + label {
   
 
 
-body.dark, body.dark .container {
+body.dark, body.dark  {
   background-color: #333;
   color: #f9f9fa; 
   box-shadow: inherit;}
 
 
 body.dark .homecontent {
-  background-color: #333;
+  // background-color: #333;
   color: #f9f9fa !important; 
   box-shadow: inherit;
   margin-bottom:0 !important;
