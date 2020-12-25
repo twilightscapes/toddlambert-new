@@ -27,20 +27,20 @@ const CustomBox = styled.div`
 
 .slider{z-index:-1;}
 
-.container2 {
-	overflow-y: scroll;
-  scroll-snap-type: y proximity;
-  height:100vh;
-}
+// .container2 {
+// 	overflow-y: scroll;
+//   scroll-snap-type: y proximity;
+//   height:100vh;
+// }
 
-section {
+// section {
 
-  border-bottom:0px solid #777 !important;
-	overflow-y: scroll;
-  scroll-snap-type: y proximity;
-  height:100vh;
+//   border-bottom:0px solid #777 !important;
+// 	overflow-y: scroll;
+//   scroll-snap-type: y proximity;
+//   height:100vh;
 
-}
+// }
 
 .slider1{
   position:fixed; 
@@ -195,13 +195,13 @@ body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
     section {
       scroll-snap-align: proximity;
       border-bottom:0px solid #777 !important;
-      overflow:auto;
+      overflow:none;
       height:100%;
     }
 
 
     .container2 {
-      overflow-y: auto;
+      overflow-y: none;
       scroll-snap-type: proximity;
       height:100%;
     }
@@ -314,7 +314,7 @@ Conceptual Photography
 </div>
 
   <div style={{width:'50%', maxWidth:'50vw', right:'', position:''}}>
-  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0} duration={7}>
+  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0} duration={3}>
 <BgImage filename="ahout-todd.jpg" style={{padding:'0',}} />
 </ScrollAnimation>
 </div>
@@ -335,7 +335,7 @@ Conceptual Photography
  
  {/* SKILLS TIMELINE */}
 
- <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0} duration={7}>
+ <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0} duration={2}>
    
 <div className="container1" style={{}}>
 <h3 className="logotype" style={{textAlign:'center', marginTop:'50px', fontSize:'250%',}}>
@@ -520,7 +520,7 @@ Resume
 <section className="child" style={{position:'relative', height:'', paddingTop:'0', fontSize:'100%', background:'transparent', overflowY:'auto', overflowX:'hidden', display:'flex', flexWrap:'nowrap'}}>
 
 
-<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0} duration={7}>
+<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0} duration={2}>
 
 <div className=" outer1 section1" style={{paddingTop:'100px', height:'', background:'transparent'}}>
 
@@ -636,7 +636,7 @@ Responsible for site architecture, design, graphics, programming, copywriting/ed
 
 
 <section className="child" style={{position:'relative', height:'auto', zIndex:'', paddingTop:'100px',}}>
-  <div className="outer" style={{margin:'0 0'}}><a href="#portfolio"> Portfolio</a> <Contact /></div> 
+  <div className="outer" style={{margin:'0 0'}}><Contact /></div> 
  </section>
 
 
