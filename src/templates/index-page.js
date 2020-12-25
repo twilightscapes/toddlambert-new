@@ -314,7 +314,7 @@ Conceptual Photography
 </div>
 
   <div style={{width:'50%', maxWidth:'50vw', right:'', position:''}}>
-  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={1500} duration={7}>
+  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0} duration={7}>
 <BgImage filename="ahout-todd.jpg" style={{padding:'0',}} />
 </ScrollAnimation>
 </div>
@@ -335,6 +335,8 @@ Conceptual Photography
  
  {/* SKILLS TIMELINE */}
 
+ <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0} duration={7}>
+   
 <div className="container1" style={{}}>
 <h3 className="logotype" style={{textAlign:'center', marginTop:'50px', fontSize:'250%',}}>
 Hats worn
@@ -495,7 +497,7 @@ Success online is not simply throwing numbers(visitors) at something. I&apos;ve 
 
  </div> */}
 
-
+</ScrollAnimation>
  {/* SKILLS TIMELINE */}
 
 
@@ -517,6 +519,8 @@ Resume
 
 <section className="child" style={{position:'relative', height:'', paddingTop:'0', fontSize:'100%', background:'transparent', overflowY:'auto', overflowX:'hidden', display:'flex', flexWrap:'nowrap'}}>
 
+
+<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0} duration={7}>
 
 <div className=" outer1 section1" style={{paddingTop:'100px', height:'', background:'transparent'}}>
 
@@ -618,9 +622,10 @@ Responsible for site architecture, design, graphics, programming, copywriting/ed
 </div>
 
  </div>
+
  {/* <BgImage filename="resume-bg1.png" style={{padding:'',}} /> */}
 </div>
-
+</ScrollAnimation>
 </section>
 {/* Panel 3 */}
 
