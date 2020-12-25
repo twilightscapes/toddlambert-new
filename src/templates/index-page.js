@@ -29,7 +29,7 @@ const CustomBox = styled.div`
 
 .container2 {
 	overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   height:100vh;
 }
 
@@ -37,7 +37,7 @@ section {
 
   border-bottom:0px solid #777 !important;
 	overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   height:100vh;
 
 }
@@ -62,14 +62,14 @@ section {
 
 
 
-// .intro:before{
-// 	content: "About Twilightscapes";
-// position:absolute;
-// display: flex;
-// align-items: center;
-// justify-content: center;
-// font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
-// }
+.intro:before{
+	content: "";
+position:absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size:380%; color:#111; text-shadow: 12px 7px 15px 12px black;
+}
 
 
 
@@ -193,7 +193,7 @@ body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
   @media (hover: hover) {
 
     section {
-      scroll-snap-align: none;
+      scroll-snap-align: proximity;
       border-bottom:0px solid #777 !important;
       overflow:auto;
       height:100%;
@@ -202,7 +202,7 @@ body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
 
     .container2 {
       overflow-y: auto;
-      scroll-snap-type: none;
+      scroll-snap-type: proximity;
       height:100%;
     }
 
@@ -222,6 +222,7 @@ body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
 const HomePage = () => (
   <Layout>
    <CustomBox>
+  
   
   <div className="logolink" style={{textAlign:'center', position:'absolute', zIndex:'0', width:'98vw'}}><a title="Logo - Back To Home" href="/" style={{fontSize:'60px',  textDecoration:'none'}}><span class="logofirst">todd</span> <span className="logocolor">lambert</span></a></div>
 
@@ -244,10 +245,10 @@ const HomePage = () => (
 
 
 {/* <Navbar /> */}
-{/* <TouchUp /> */}
+<TouchUp />
 
   
-<div className="container2" style={{position:'', top:'', height:'', display:'', overflowY:'scroll', overflowX:'hidden', background:'transparent'}}>
+<div className="container2 intro" style={{position:'', top:'', height:'', display:'', overflowY:'', overflowX:'', background:'transparent'}}>
 
 
 
@@ -256,8 +257,45 @@ const HomePage = () => (
 {/*  Panel 1 */}
 
 
-<section className="child" style={{position:'relative', height:'100vh', paddingTop:'100px', overflow:'hidden'}}>
+<section className="child" style={{position:'relative', height:'100vh', paddingTop:'0', overflow:'', display:'flex', flexDirection:'column', justifyContent:'center', textAlign:'center'}}>
 
+<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={500}>
+<h1 className="logofirst" style={{textAlign:'center', marginTop:'50px', fontSize:'10vw',
+fontFamily: 'Lobster Two',
+letterSpacing: '2px',
+textTransform: 'lowercase',
+fontWeight: '400',
+textShadow:'0 2px 0 #eee'
+
+}}>
+Digital Product Design
+</h1>
+</ScrollAnimation>
+
+<h3 className="logofirst" style={{textAlign:'center', marginTop:'50px', fontSize:'10vw%',
+fontFamily: 'Lobster Two',
+letterSpacing: '2px',
+textTransform: 'lowercase',
+fontWeight: '400',
+textShadow:'0 2px 0 #eee',
+margin:'-4vh 0 -4vh 0',
+textAlign:'center'
+}}>
+  
+</h3>
+<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={600}>
+<h4 className="logofirst" style={{textAlign:'center', marginTop:'50px', fontSize:'10vw',
+fontFamily: 'Lobster Two',
+letterSpacing: '2px',
+textTransform: 'lowercase',
+fontWeight: '400',
+textShadow:'0 2px 0 #eee',
+
+
+}}>
+Conceptual Photography
+</h4>
+</ScrollAnimation>
 
 
 
@@ -268,10 +306,19 @@ const HomePage = () => (
 
 {/*  Panel 2 */}
 
-<section className="child" style={{position:'relative', height:'100vh', overflow:'hidden'}}>
-  <div style={{width:'50%', maxWidth:'50vw', right:'0', position:'absolute'}}>
-<BgImage filename="ahout-todd.jpg" style={{padding:'0',}} />
+<section className="child" style={{position:'relative', height:'100vh', overflow:'', display:'flex'}}>
+<div style={{width:'75%'}}>
+  <blockquote>
+    This is who I am
+  </blockquote>
 </div>
+
+  <div style={{width:'50%', maxWidth:'50vw', right:'', position:''}}>
+  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={1500} duration={7}>
+<BgImage filename="ahout-todd.jpg" style={{padding:'0',}} />
+</ScrollAnimation>
+</div>
+
 </section>
 {/*  Panel 2 */}
 
@@ -284,7 +331,7 @@ const HomePage = () => (
 
 
  
- <section className="child about1 outer1 section" style={{position:'relative', height:'2000px', paddingTop:'100px', overflow:'auto'}}>
+ <section className="child about1 outer1 section" style={{position:'relative', height:'', paddingTop:'100px', overflow:''}}>
  
  {/* SKILLS TIMELINE */}
 
