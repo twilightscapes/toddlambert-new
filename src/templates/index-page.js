@@ -27,17 +27,17 @@ const CustomBox = styled.div`
 
 .slider{z-index:-1;}
 
-.container2 {
-	overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  height:100vh;
-}
+// .container2 {
+// 	overflow-y: scroll;
+//   scroll-snap-type: y mandatory;
+//   height:100vh;
+// }
 
 section {
-  scroll-snap-type: y mandatory;
-  border-bottom:0px solid #777 !important;
-  height:100vh;
-	overflow-y: scroll;
+
+  border-bottom:1px solid #777 !important;
+
+
 }
 
 .slider1{
@@ -191,8 +191,8 @@ body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
   @media (hover: hover) {
 
     section {
-      scroll-snap-type: none;
-      border-bottom:1px solid #777 !important;
+      scroll-snap-align: inherit;
+      border-bottom:0px solid #777 !important;
       overflow:auto;
       height:100%;
     }
@@ -200,12 +200,13 @@ body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
 
     .container2 {
       overflow-y: auto;
-      scroll-snap-type: none;
+      scroll-snap-type: mandatory;
       height:100%;
     }
 
 
   }
+
 
 
 
@@ -281,7 +282,7 @@ const HomePage = () => (
 
 
  
- <section className="child about1 outer1 section" style={{position:'relative', paddingTop:'100px', overflow:'auto'}}>
+ <section className="child about1 outer1 section" style={{position:'relative', height:'2000px', paddingTop:'100px', overflow:'auto'}}>
  
  {/* SKILLS TIMELINE */}
 
