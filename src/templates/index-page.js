@@ -27,16 +27,18 @@ const CustomBox = styled.div`
 
 .slider{z-index:-1;}
 
-// .container2 {
-// 	overflow-y: scroll;
-//   scroll-snap-type: y mandatory;
-//   height:100vh;
-// }
+.container2 {
+	overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height:100vh;
+}
 
 section {
 
-  border-bottom:1px solid #777 !important;
-
+  border-bottom:0px solid #777 !important;
+	overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height:100vh;
 
 }
 
@@ -191,7 +193,7 @@ body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
   @media (hover: hover) {
 
     section {
-      scroll-snap-align: inherit;
+      scroll-snap-align: none;
       border-bottom:0px solid #777 !important;
       overflow:auto;
       height:100%;
@@ -200,14 +202,14 @@ body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
 
     .container2 {
       overflow-y: auto;
-      scroll-snap-type: mandatory;
+      scroll-snap-type: none;
       height:100%;
     }
 
 
   }
 
-
+.color{max-width:inherit !important; width:inherit !important; height:inherit !important; border:20px solid red !important;}
 
 
 
@@ -302,7 +304,7 @@ Hats worn
 <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
 <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'30px', padding:'', order:'1', position:'relative',}}>
-<Image alt="Entrepreneur Hat - Top Hat" filename="hats1.png" style={{borderColor:'transparent', }} />
+<Image className="color" alt="Entrepreneur Hat - Top Hat" filename="hats1.png" style={{borderColor:'transparent', maxWidth:'150px' }} />
 <br />
 <h2>Entrepreneur</h2>
 <p>
@@ -320,7 +322,7 @@ Being a self-starter and self-learner are the basic fundamentals of a natural en
  <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
-<Image className="color" alt="Webmaster Hat - Square Hat" filename="hats2.png" style={{borderColor:'transparent',}} />
+<Image className="color" alt="Webmaster Hat - Square Hat" filename="hats2.png" width="200px" height="200px" style={{borderColor:'transparent',}} />
 <br />
 <h2>Webmaster</h2>
 <p>
@@ -340,7 +342,7 @@ Back in the day, a webmaster learned that a full tool box was needed for web des
  <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'30px', padding:'', order:'1', position:'relative',}}>
-<Image className="color" alt="Designer Hat - Beret" filename="hats3.png" style={{borderColor:'transparent',}} />
+<Image className="color" alt="Designer Hat - Beret" filename="hats3.png" width="200px" height="200px" style={{borderColor:'transparent',}} />
 <br />
 <h2>Designer</h2>
 <p>
@@ -375,7 +377,7 @@ Over the years I&apos;ve spent inordinate amounts of time learning Typography, S
  <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
-<Image alt="Developer Hat - Beanie" filename="hats4.png" style={{borderColor:'transparent',}} />
+<Image className="color" alt="Developer Hat - Beanie" filename="hats4.png" style={{borderColor:'transparent',}} />
 <br />
 <h2>Developer</h2>
 <p>
@@ -391,7 +393,7 @@ As the Internet became more complicated I immersed myself in different programmi
  <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
-<Image alt="Marketer Hat - Ball Cap" filename="hats5.png" style={{borderColor:'transparent',}} />
+<Image className="color" alt="Marketer Hat - Ball Cap" filename="hats5.png" style={{borderColor:'transparent',}} />
 <br />
 <h2>Marketer</h2>
 <p>
@@ -408,7 +410,7 @@ I&apos;ve been on the Internet since the beginning. I&apos;ve become adept at de
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
-<Image alt="Analyst Hat - Fedora" filename="hats6.png" style={{borderColor:'transparent',}} />
+<Image className="color" alt="Analyst Hat - Fedora" filename="hats6.png" style={{borderColor:'transparent',}} />
 <br />
 <h2>Analyst</h2>
 <p>
