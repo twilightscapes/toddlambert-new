@@ -128,7 +128,6 @@ body.light .speech p span{color:#fff;}
 
 
 
-.intro:before{font-size:200%;}
 
 // body.dark, body.dark .container{background-color:#fff !important;}
 body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
@@ -224,34 +223,14 @@ const HomePage = () => (
    <CustomBox>
   
   
-  <div className="logolink" style={{textAlign:'center', position:'absolute', zIndex:'0', width:'98vw'}}><a title="Logo - Back To Home" href="/" style={{fontSize:'60px',  textDecoration:'none'}}><span class="logofirst">todd</span> <span className="logocolor">lambert</span></a></div>
-
-
-  <div className="themer" style={{display:'block', position:'fixed', right:'40px', top:'20px', zIndex:'2'}}><ThemeToggler>
-        {({ theme, toggleTheme }) => (
-          <div className="themeSlide">
-            
-            <input
-              type="checkbox" value="None" id="themeSlide" name="themeSlide"
-              onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
-              checked={theme === 'dark'}
-            />{' '}
-            
-          <label htmlFor="themeSlide" style={{color:'#222', textAlign:'center', padding:'0',}}><WiDaySunny /></label></div>
-        )}
-      </ThemeToggler></div>
- 
-
+  <div className="logolink" style={{textAlign:'center', position:'absolute', top:'8vh', zIndex:'0', width:'98vw'}}><a title="Logo - Back To Home" href="/" style={{fontSize:'7vw',  textDecoration:'none'}}><span class="logofirst">todd</span> <span className="logocolor">lambert</span></a></div>
 
 
 {/* <Navbar /> */}
 <TouchUp />
 
   
-<div className="container2 intro" style={{position:'', top:'', height:'', display:'', overflowY:'', overflowX:'', background:'transparent'}}>
-
-
-
+<div className="container2 intro" style={{position:'', top:'2vh', height:'', display:'', overflowY:'', overflowX:'', background:'transparent'}}>
 
 	
 {/*  Panel 1 */}
@@ -260,7 +239,7 @@ const HomePage = () => (
 <section className="child" style={{position:'relative', height:'100vh', paddingTop:'0', overflow:'', display:'flex', flexDirection:'column', justifyContent:'center', textAlign:'center'}}>
 
 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={500}>
-<h1 className="logofirst" style={{textAlign:'center', marginTop:'50px', fontSize:'10vw',
+<h1 className="logofirst" style={{textAlign:'center', marginTop:'50px', fontSize:'7vw',
 fontFamily: 'Lobster Two',
 letterSpacing: '2px',
 textTransform: 'lowercase',
@@ -272,7 +251,7 @@ Digital Product Design
 </h1>
 </ScrollAnimation>
 
-<h3 className="logofirst" style={{textAlign:'center', marginTop:'50px', fontSize:'10vw%',
+<h3 className="logofirst" style={{textAlign:'center', marginTop:'50px', fontSize:'7vw%',
 fontFamily: 'Lobster Two',
 letterSpacing: '2px',
 textTransform: 'lowercase',
@@ -284,7 +263,7 @@ textAlign:'center'
   
 </h3>
 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true} delay={600}>
-<h4 className="logofirst" style={{textAlign:'center', marginTop:'50px', fontSize:'10vw',
+<h4 className="logofirst" style={{textAlign:'center', marginTop:'50px', fontSize:'7vw',
 fontFamily: 'Lobster Two',
 letterSpacing: '2px',
 textTransform: 'lowercase',
@@ -331,7 +310,7 @@ Conceptual Photography
 
 
  
- <section className="child about1 outer1 section" style={{position:'relative', height:'', paddingTop:'100px', overflow:''}}>
+ <section className="child about1 outer1 section" style={{position:'relative', height:'', padding:'100px 2vw', overflow:''}}>
  
  {/* SKILLS TIMELINE */}
 
@@ -517,7 +496,7 @@ Resume
 </h3>
 </div>
 
-<section className="child" style={{position:'relative', height:'', paddingTop:'0', fontSize:'100%', background:'transparent', overflowY:'auto', overflowX:'hidden', display:'flex', flexWrap:'nowrap'}}>
+<section className="child" style={{position:'relative', height:'', padding:'20px 2vw', fontSize:'100%', background:'transparent', overflowY:'auto', overflowX:'hidden', display:'flex', flexWrap:'nowrap'}}>
 
 
 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0} duration={2}>
@@ -668,6 +647,20 @@ Responsible for site architecture, design, graphics, programming, copywriting/ed
 
 
 </section>
+
+<div className="themer" style={{display:'block', position:'fixed', right:'40px', top:'20px', zIndex:'2'}}><ThemeToggler>
+        {({ theme, toggleTheme }) => (
+          <div className="themeSlide">
+            
+            <input
+              type="checkbox" value="None" id="themeSlide" name="themeSlide"
+              onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+              checked={theme === 'dark'}
+            />{' '}
+            
+          <label htmlFor="themeSlide" style={{color:'#222', textAlign:'center', padding:'0',}}><WiDaySunny /></label></div>
+        )}
+      </ThemeToggler></div>
 
 
 <Footer />
