@@ -210,6 +210,9 @@ body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
 
 .color{max-width:inherit !important; width:inherit !important; height:inherit !important; border:20px solid red !important;}
 
+.hats{width:100% !important; display:block; position:relative; border:0px solid white; padding:0 10vw;}
+.hats img{position:absolute !important; right:0 !important; border:0px solid red !important;
+ max-width:150px, max-height:150px;}
 
 
 `
@@ -384,7 +387,7 @@ Hats worn
 <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'', padding:'', order:'1', position:'relative',}}>
 
 
-<div style={{maxWidth:'20%', textAlign:'center'}}>
+<div className="hats" style={{ textAlign:'center'}}>
   <h2>Entrepreneur</h2>
   <Image className="color" alt="Entrepreneur Hat - Top Hat" filename="hats1.png" />
   </div>
@@ -406,7 +409,7 @@ Being a self-starter and self-learner are the basic fundamentals of a natural en
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
- <div style={{maxWidth:'20%', textAlign:'center'}}>
+ <div className="hats" style={{ textAlign:'center'}}>
 <h2>Webmaster</h2>
 <Image className="color" alt="Webmaster Hat - Square Hat" filename="hats2.png" width="200px" height="200px" style={{borderColor:'transparent',}} />
 </div>
@@ -429,7 +432,7 @@ Back in the day, a webmaster learned that a full tool box was needed for web des
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'', padding:'', order:'1', position:'relative',}}>
 
- <div style={{maxWidth:'20%', textAlign:'center'}}>
+ <div className="hats" style={{ textAlign:'center'}}>
 <h2>Designer</h2>
 <Image className="color" alt="Designer Hat - Beret" filename="hats3.png" width="200px" height="200px" style={{borderColor:'transparent',}} />
 </div>
@@ -463,11 +466,11 @@ Over the years I&apos;ve spent inordinate amounts of time learning Typography, S
 
 
 
- <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
+ <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'start', flexDirection:'', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
- <div style={{maxWidth:'20%', textAlign:'center'}}>
+ <div className="hats" style={{ textAlign:'center'}}>
 <h2>Developer</h2>   
 <Image className="color" alt="Developer Hat - Beanie" filename="hats4.png" style={{borderColor:'transparent',}} />
 </div>
@@ -485,7 +488,7 @@ As the Internet became more complicated I immersed myself in different programmi
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
- <div style={{maxWidth:'20%', textAlign:'center'}}>
+ <div className="hats" style={{ textAlign:'center'}}>
 <h2>Marketer</h2>
 <Image className="color" alt="Marketer Hat - Ball Cap" filename="hats5.png" style={{borderColor:'transparent',}} />
 </div>
@@ -504,7 +507,7 @@ I&apos;ve been on the Internet since the beginning. I&apos;ve become adept at de
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
- <div style={{maxWidth:'20%', textAlign:'center'}}>
+ <div className="hats" style={{ textAlign:'center'}}>
 <h2>Analyst</h2>
 <Image className="color" alt="Analyst Hat - Fedora" filename="hats6.png" style={{borderColor:'transparent',}} />
 </div>
@@ -597,8 +600,9 @@ Lambert
 
 <p>Industry experience including semiconductor, hospitality, entertainment, health, publishing, finance, insurance, construction, computer software, and direct marketing.</p>
 
-  
+<br />
 <h2 className="todd-headline" style={{marginBottom:''}}>Proficiency</h2>
+
 
 <p>Veteran WordPress Theme/Plugin Developer <br />React JS Frontend Designer/Developer</p>
 
@@ -608,7 +612,7 @@ Lambert
 
 <p><strong>I prefer: JAM stack, React, Gatsby, Canon, Subaru and my Mac.</strong></p>
 
-
+<br />
 <h2 className="todd-headline">Education</h2>
 
 <ul className="edu">
@@ -682,7 +686,7 @@ Responsible for site architecture, design, graphics, programming, copywriting/ed
 
 
 
-<section className="child" style={{position:'relative', height:'auto', zIndex:'', paddingTop:'100px',}}>
+<section className="child" style={{position:'relative', height:'auto', zIndex:'', paddingTop:'',}}>
   <div className="outer" style={{margin:'0 0'}}><Contact /></div> 
  </section>
 
@@ -709,7 +713,7 @@ Responsible for site architecture, design, graphics, programming, copywriting/ed
   </div>
 </div> */}
 
-<section className="child" style={{position:'relative', height:'100vh'}}>
+<section className="child" style={{position:'relative', height:''}}>
 
 
 
