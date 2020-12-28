@@ -287,13 +287,63 @@ Conceptual Photography
 
 <section className="child" style={{position:'relative', height:'100vh', overflow:'', display:'flex'}}>
 <div style={{width:'75%'}}>
-  <blockquote>
-    This is who I am
+  <blockquote style={{padding:'1rem 5vw'}}>
+
+  <h3 className="logotype" style={{textAlign:'center', margin:'5vh', fontSize:'250%',}}>
+About
+</h3>
+
+<p>Todd Lambert, a “webdude” that grew up in Southern California and whose career and endeavors have taken him to over 14 western states including living in Colorado, Texas and Oregon. He eventually found home living on the coastal Mississippi Sound.
+</p>
+<p>
+Having lived on the Mississippi gulf coast, twice, Todd has assisted many small businesses that were affected by Hurricane Katrina in establishing a sucessful online presence.
+</p>
+<p>
+Todd is also actively involved with photography. You can often find him in the middle of the night down some dark alley while doing night photography and astrophotography which are his favorite subjects.
+</p>
+<p>
+Todd is single and has a dog-child and playful Boxer named “Zoe”, that takes up most of his free time.
+</p>
+
   </blockquote>
+
+
+
+    
+    <h3 class="logotype"  style={{textAlign:'center', margin:'5vh', fontSize:'250%',}}>Network</h3>
+
+<div style={{display:'flex', padding:'1rem', flexWrap:'nowrap', justifyContent:'start'}}>
+
+  <div style={{width:'50%', margin:'1rem'}}>
+    <a href="https://twilightscapes.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
+    <Image className="" alt="Todd Lambert Night photos" filename="twilightscapes-button.jpg" />
+    <br />
+    Experience a new style of landscape photography all through the eyes of Todd Lambert. Explore the unusual and see the Western States like you&apos;ve never seen them before.
+    <h5 style={{textAlign:'center',}}>Visit Twilightscapes.com</h5></a>
+    </div>
+
+
+
+
+ 
+    
+    <div style={{width:'50%', margin:'1rem'}}>
+    <a href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
+    <Image className="" alt="Todd Lambert Night photos" filename="urban-fetish-button.jpg" />
+    <br />
+    Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. 
+    
+    <h5 style={{textAlign:'center',}}>Visit UrbanFetish.com</h5></a>
+    
+    </div>
+</div>
+
+
+
 </div>
 
   <div style={{width:'50%', maxWidth:'50vw', right:'', position:''}}>
-  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0} duration={3}>
+  <ScrollAnimation animateIn="fadeIn" animateOut="" initiallyVisible={false} animateOnce={true} animatePreScroll={false} delay={0} duration={3}>
 <BgImage filename="ahout-todd.jpg" style={{padding:'0',}} />
 </ScrollAnimation>
 </div>
@@ -317,7 +367,7 @@ Conceptual Photography
  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0} duration={2}>
    
 <div className="container1" style={{}}>
-<h3 className="logotype" style={{textAlign:'center', marginTop:'50px', fontSize:'250%',}}>
+<h3 className="logotype" style={{textAlign:'center', margin:'50px', fontSize:'250%',}}>
 Hats worn
 </h3>
 </div>
@@ -331,10 +381,15 @@ Hats worn
 
 <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
-<div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'30px', padding:'', order:'1', position:'relative',}}>
-<Image className="color" alt="Entrepreneur Hat - Top Hat" filename="hats1.png" style={{borderColor:'transparent', maxWidth:'150px' }} />
-<br />
-<h2>Entrepreneur</h2>
+<div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'', padding:'', order:'1', position:'relative',}}>
+
+
+<div style={{maxWidth:'20%', textAlign:'center'}}>
+  <h2>Entrepreneur</h2>
+  <Image className="color" alt="Entrepreneur Hat - Top Hat" filename="hats1.png" />
+  </div>
+
+
 <p>
 Being a self-starter and self-learner are the basic fundamentals of a natural entrepreneur. I&apos;ve been involved both as a partner and a consultant to many businesses and I am able to see the forest through the trees, while keeping an eye on the bottom-line.
 </p>
@@ -350,9 +405,12 @@ Being a self-starter and self-learner are the basic fundamentals of a natural en
  <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
-<Image className="color" alt="Webmaster Hat - Square Hat" filename="hats2.png" width="200px" height="200px" style={{borderColor:'transparent',}} />
-<br />
+
+ <div style={{maxWidth:'20%', textAlign:'center'}}>
 <h2>Webmaster</h2>
+<Image className="color" alt="Webmaster Hat - Square Hat" filename="hats2.png" width="200px" height="200px" style={{borderColor:'transparent',}} />
+</div>
+
 <p>
 Back in the day, a webmaster learned that a full tool box was needed for web design and development. I learned UNIX, IIS, TCP/IP, Cpanel, and PHPMyadmin while entertaining myself primarily in the CGI-Bin directory.
 </p>
@@ -369,10 +427,13 @@ Back in the day, a webmaster learned that a full tool box was needed for web des
  
  <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
- <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'30px', padding:'', order:'1', position:'relative',}}>
-<Image className="color" alt="Designer Hat - Beret" filename="hats3.png" width="200px" height="200px" style={{borderColor:'transparent',}} />
-<br />
+ <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'', padding:'', order:'1', position:'relative',}}>
+
+ <div style={{maxWidth:'20%', textAlign:'center'}}>
 <h2>Designer</h2>
+<Image className="color" alt="Designer Hat - Beret" filename="hats3.png" width="200px" height="200px" style={{borderColor:'transparent',}} />
+</div>
+
 <p>
 Over the years I&apos;ve spent inordinate amounts of time learning Typography, Space and Composition. Learning is my personal design theory and I still strive to learn something new each day by trying things.
 </p>
@@ -405,9 +466,11 @@ Over the years I&apos;ve spent inordinate amounts of time learning Typography, S
  <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
+
+ <div style={{maxWidth:'20%', textAlign:'center'}}>
+<h2>Developer</h2>   
 <Image className="color" alt="Developer Hat - Beanie" filename="hats4.png" style={{borderColor:'transparent',}} />
-<br />
-<h2>Developer</h2>
+</div>
 <p>
 As the Internet became more complicated I immersed myself in different programming languages and countless environments. Learning to adapt design to logic was a major accomplishment and one that I still work at today.
 </p>
@@ -421,9 +484,12 @@ As the Internet became more complicated I immersed myself in different programmi
  <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
-<Image className="color" alt="Marketer Hat - Ball Cap" filename="hats5.png" style={{borderColor:'transparent',}} />
-<br />
+
+ <div style={{maxWidth:'20%', textAlign:'center'}}>
 <h2>Marketer</h2>
+<Image className="color" alt="Marketer Hat - Ball Cap" filename="hats5.png" style={{borderColor:'transparent',}} />
+</div>
+
 <p>
 I&apos;ve been on the Internet since the beginning. I&apos;ve become adept at determining what people wanted to see and where. What information or answer they were searching for, became the catalyst of numerous ad campaigns and my mission for my clients.
 </p>
@@ -438,9 +504,11 @@ I&apos;ve been on the Internet since the beginning. I&apos;ve become adept at de
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
-<Image className="color" alt="Analyst Hat - Fedora" filename="hats6.png" style={{borderColor:'transparent',}} />
-<br />
+ <div style={{maxWidth:'20%', textAlign:'center'}}>
 <h2>Analyst</h2>
+<Image className="color" alt="Analyst Hat - Fedora" filename="hats6.png" style={{borderColor:'transparent',}} />
+</div>
+
 <p>
 Success online is not simply throwing numbers(visitors) at something. I&apos;ve learned to use site analytics to drive the direction of design and development projects creating a prove-it-or-lose-it type of mantra that defines performance and usability.
 </p>
@@ -496,7 +564,7 @@ Resume
 </h3>
 </div>
 
-<section className="child" style={{position:'relative', height:'', padding:'20px 2vw', fontSize:'100%', background:'transparent', overflowY:'auto', overflowX:'hidden', display:'flex', flexWrap:'nowrap'}}>
+<section className="child" style={{position:'relative', height:'', padding:'0 2vw', fontSize:'100%', background:'transparent', overflowY:'auto', overflowX:'hidden', display:'flex', flexWrap:'nowrap'}}>
 
 
 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0} duration={2}>
