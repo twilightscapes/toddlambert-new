@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { FaFacebookSquare, FaLinkedin, FaTwitterSquare, FaInstagram, FaPinterestSquare, FaYoutubeSquare } from 'react-icons/fa'
 import ScrollAnimation from 'react-animate-on-scroll'
 
-import Consent from '../components/Consent'
+// import Consent from '../components/Consent'
 
 
 
@@ -15,7 +15,7 @@ const Footer = class extends React.Component {
 
       <> 
       <ScrollAnimation animateIn="fadeIn" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={100}>
-      <Consent />
+      {/* <Consent /> */}
   </ScrollAnimation>
 
   <canvas id="canvas"></canvas> 

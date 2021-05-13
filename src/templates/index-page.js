@@ -531,7 +531,7 @@ Success online is not simply throwing numbers(visitors) at something. I&apos;ve 
 
 
 <div className="container3" style={{}}>
-<h3 className="logotype" style={{textAlign:'center', marginTop:'50px', fontSize:'250%',}}>
+<h3 className="logotype" style={{textAlign:'center', marginTop:'50px', fontSize:'250%',}}>'
 Resume
 </h3>
 </div>
