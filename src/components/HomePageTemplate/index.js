@@ -57,6 +57,8 @@ top:0 !important;
   .boom3{font-size:380% !important;}
   .boom4{font-size:280% !important;}
 
+
+
 }
 
 @media (max-width: 48em) {
@@ -71,6 +73,13 @@ top:0 !important;
   .split div{max-width:100% !important; background:tranparent !important;}
   .sidebar{margin:2rem 0;}
   .sidebar .logolink{text-align:center !important;}
+
+  body.dark, body.dark  {
+    background-color: #333;
+    color: #ff0000 !important; 
+    box-shadow: inherit;}
+
+
 }
 
 
@@ -123,7 +132,7 @@ const HomePageTemplate = ({
 
 <p>An ultra-fast website that uses state-of-the-art technology, is super flexible, and modern designed to work great everywhere.</p>
 
-<h3 className="txtshadow" style={{textAlign:'center',}}>Let Ad2 build your site today!</h3>
+<h3 className="txtshadow" style={{textAlign:'center',}}>Let Todd build your site today!</h3>
 </div>
 </div>
 </div>

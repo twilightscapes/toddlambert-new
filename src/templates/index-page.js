@@ -67,7 +67,7 @@ h2{color:#dd4000}
 @media (max-width: 48rem) {
 
 
-body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
+// body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
 
 
 }
@@ -137,6 +137,7 @@ letterSpacing: '2px',
 textTransform: 'lowercase',
 fontWeight: '400',
 textShadow:'0 2px 0 #eee',
+lineHeight:'500%',
 
 
 }}>
@@ -153,8 +154,8 @@ Conceptual Photography
 
 {/*  Panel 2 */}
 
-<section className="child" style={{position:'relative', height:'100vh', overflow:'', display:'flex'}}>
-<div style={{width:'75%'}}>
+<section className="child split" style={{position:'relative', height:'100vh', overflow:'', display:'flex'}}>
+<div style={{width:''}}>
   <blockquote style={{padding:'1rem 5vw'}}>
 
   <h3 className="logotype" style={{textAlign:'center', margin:'5vh', fontSize:'250%',}}>
@@ -178,7 +179,7 @@ Todd is single and has a dog-child and playful Boxer named “Zoe”, that takes
 
 
     
-    <h3 class="logotype"  style={{textAlign:'center', margin:'5vh', fontSize:'250%',}}>Network</h3>
+    <h3 class="logotype"  style={{textAlign:'center', marginTop:'5vh', fontSize:'250%',}}>Network</h3>
 
 <div style={{display:'flex', padding:'1rem', flexWrap:'nowrap', justifyContent:'start'}}>
 
@@ -531,7 +532,7 @@ Success online is not simply throwing numbers(visitors) at something. I&apos;ve 
 
 
 <div className="container3" style={{}}>
-<h3 className="logotype" style={{textAlign:'center', marginTop:'50px', fontSize:'250%',}}>'
+<h3 className="logotype" style={{textAlign:'center', marginTop:'50px', fontSize:'250%',}}>
 Resume
 </h3>
 </div>

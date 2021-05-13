@@ -49,7 +49,7 @@ const Footer = class extends React.Component {
 
 
 
-<div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: ''}}>Copyright &copy; {(new Date().getFullYear())} Todd Lambert - Built with Gatsby on Netlify</div>
+<div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: '80%'}}>Copyright &copy; {(new Date().getFullYear())} Todd Lambert - Built with Gatsby on Netlify</div>
         </div>
         
       </footer>
