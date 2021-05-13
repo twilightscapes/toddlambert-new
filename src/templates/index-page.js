@@ -68,6 +68,7 @@ h2{color:#dd4000}
 
 
 // body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
+.logofirst, .logocolor{font-size:10vw;}
 
 
 }
@@ -137,7 +138,7 @@ letterSpacing: '2px',
 textTransform: 'lowercase',
 fontWeight: '400',
 textShadow:'0 2px 0 #eee',
-lineHeight:'500%',
+
 
 
 }}>
@@ -155,8 +156,8 @@ Conceptual Photography
 {/*  Panel 2 */}
 
 <section className="child split" style={{position:'relative', height:'100vh', overflow:'', display:'flex'}}>
-<div style={{width:''}}>
-  <blockquote style={{padding:'1rem 5vw'}}>
+<div style={{width:'55vw'}}>
+  <blockquote style={{padding:'1rem 0 1rem 5vw'}}>
 
   <h3 className="logotype" style={{textAlign:'center', margin:'5vh', fontSize:'250%',}}>
 About
@@ -179,9 +180,40 @@ Todd is single and has a dog-child and playful Boxer named “Zoe”, that takes
 
 
     
-    <h3 class="logotype"  style={{textAlign:'center', marginTop:'5vh', fontSize:'250%',}}>Network</h3>
+   
 
-<div style={{display:'flex', padding:'1rem', flexWrap:'nowrap', justifyContent:'start'}}>
+
+
+
+</div>
+
+  <div style={{width:'100%', maxWidth:'40vw', right:'', position:''}}>
+  <ScrollAnimation animateIn="fadeIn" animateOut="" initiallyVisible={false} animateOnce={true} animatePreScroll={false} delay={0} duration={3}>
+<BgImage filename="ahout-todd.jpg" style={{padding:'2rem',}} />
+</ScrollAnimation>
+</div>
+
+</section>
+{/*  Panel 2 */}
+
+
+
+
+
+
+{/*  Panel 3 */}
+
+
+ 
+ <section className="child about1 outer1 section" style={{position:'relative', height:'', padding:'100px 2vw', overflow:'', display:'flex'}}>
+ 
+ {/* SKILLS TIMELINE */}
+
+ <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0} duration={2}>
+
+ <h3 class="logotype"  style={{textAlign:'center', marginTop:'5vh', fontSize:'250%', clear:'right'}}>Photography</h3>
+<div style={{display:'flex', padding:'1rem', flexWrap:'nowrap', justifyContent:''}}>
+
 
   <div style={{width:'50%', margin:'1rem'}}>
     <a href="https://twilightscapes.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
@@ -206,34 +238,6 @@ Todd is single and has a dog-child and playful Boxer named “Zoe”, that takes
     
     </div>
 </div>
-
-
-
-</div>
-
-  <div style={{width:'50%', maxWidth:'50vw', right:'', position:''}}>
-  <ScrollAnimation animateIn="fadeIn" animateOut="" initiallyVisible={false} animateOnce={true} animatePreScroll={false} delay={0} duration={3}>
-<BgImage filename="ahout-todd.jpg" style={{padding:'0',}} />
-</ScrollAnimation>
-</div>
-
-</section>
-{/*  Panel 2 */}
-
-
-
-
-
-
-{/*  Panel 3 */}
-
-
- 
- <section className="child about1 outer1 section" style={{position:'relative', height:'', padding:'100px 2vw', overflow:'', display:'flex'}}>
- 
- {/* SKILLS TIMELINE */}
-
- <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0} duration={2}>
    
 {/* <div className="container1" style={{}}>
 <h3 className="logotype" style={{textAlign:'center', margin:'50px', fontSize:'250%',}}>
@@ -336,7 +340,7 @@ Over the years I&apos;ve spent inordinate amounts of time learning Typography, S
  
  {/*  */}
 
- <div className="split nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
+ <div className="split " style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
