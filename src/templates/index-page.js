@@ -24,44 +24,6 @@ const CustomBox = styled.div`
 
 
 
-
-.slider{z-index:-1;}
-
-// .container2 {
-// 	overflow-y: scroll;
-//   scroll-snap-type: y proximity;
-//   height:100vh;
-// }
-
-// section {
-
-//   border-bottom:0px solid #777 !important;
-// 	overflow-y: scroll;
-//   scroll-snap-type: y proximity;
-//   height:100vh;
-
-// }
-
-.slider1{
-  position:fixed; 
-  top:0;
-  width:100vw;
-  height:100vh;
-  height:100%;
-  display:block;
-  background-size:cover;
-  min-height:100vh;
-}
-
-
-
-
-
-
-
-
-
-
 .intro:before{
 	content: "";
 position:absolute;
@@ -83,135 +45,38 @@ h2{color:#dd4000}
 .primary{padding:0;}
 
 
-.outer .container{width:100%; height:auto; margin:0 auto;}
+// .outer .container{width:100%; height:auto; margin:0 auto;}
 
-.imgbox img{border-radius:12px; border:0px solid #000;}
+// .imgbox img{border-radius:12px; border:0px solid #000;}
 
-.spacer33{height:15vh;}
-.spacer66{height:66vh;}
-.spacer99{height:99vh;}
+// .spacer33{height:15vh;}
+// .spacer66{height:66vh;}
+// .spacer99{height:99vh;}
 
-p{line-height:150%;}
+// p{line-height:150%;}
 
 
-body.light .speech p span{color:#fff;}
+
 
 .outer{padding:0 11%; border:0px solid red; padding-top:2rem !important;}
 .split div:first-child{padding-right:1rem; border:0px solid yellow;}
 .split div:last-child{padding-left:1rem; border:0px solid blue;}
 
-@media (min-width: 48rem) and (max-width: 1000px) { 
-	
- }
 
 
 @media (max-width: 48rem) {
-.split{flex-direction:row !important; width:100% !important;}
-
-.split div{width:100% !important}
-.split div:first-child{order:1}
-.split div:last-child{order:2}
-
-.outer{padding:5%; border:0px solid red; }
-.split div:first-child{padding-right:0rem; border:0px solid yellow;}
-.split div:last-child{padding-left:0rem; border:0px solid blue;}
-
-.spacer33, .spacer66, .spacer99{height:15vh;}
-
-.split.nowrap{flex-direction:row !important; width:100% !important;}
-.split.nowrap div:first-child{order:2}
-.split.nowrap div:last-child{order:1}
-.split.nowrap .speech{border:1px solid;}
-
-.split.nowrap div.speech{width: 60vw !important;}
-.split.nowrap div.imgbox{width:30vw !important; margin-left:1rem !important;}
 
 
-
-
-// body.dark, body.dark .container{background-color:#fff !important;}
 body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
-
-
-
 
 
 }
 
-@media (min-width: 58rem) {
-	.outer{padding:0 14%;}
-	}
 
-
-
-
-  .image-wrap {
-    width: 60%;
-    height: 100vh;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .image-wrap img {
-    width: 100vw;
-    z-index:0;
-  }
-  
-  
-  
-  
-  @media (min-width: 48em) {
-  
-    .boom1{font-size:380% !important;}
-    .boom2{font-size:250% !important;}
-    .boom3{font-size:380% !important;}
-    .boom4{font-size:280% !important;}
-  
-  }
-  
-  @media (max-width: 48em) {
-  
-    .image-wrap {height:auto !important; min-height:200px !important;}
-    
-    .intro:before{font-size:150% !important}
-    .content{flex-direction:column !important;}
-    .content .stack{width:100% !important; margin:0 !important; background:tranparent !important;}
-    .pitch{font-size:250% !important; text-align:center;}
-    .split {display:block !important; width:100% !important; }
-    .split div{max-width:100% !important; background:tranparent !important;}
-    .sidebar{margin:2rem 0;}
-    .sidebar .logolink{text-align:center !important;}
-  }
-
-  @media (display-mode: standalone) {
-    /* All installed PWAs */
-
-  }
-    
-  @media (hover: hover) {
-
-    section {
-      scroll-snap-align: proximity;
-      border-bottom:0px solid #777 !important;
-      overflow:none;
-      height:100%;
-    }
-
-
-    .container2 {
-      overflow-y: none;
-      scroll-snap-type: proximity;
-      height:100%;
-    }
-
-
-  }
-
-.color{max-width:inherit !important; width:inherit !important; height:inherit !important; border:20px solid red !important;}
+// .color{max-width:inherit !important; width:inherit !important; height:inherit !important; border:20px solid red !important;}
 
 .hats{width:100% !important; display:block; position:relative; border:0px solid white; padding:0 10vw;}
-.hats img{position:absolute !important; right:0 !important; border:0px solid red !important;
+// .hats img{position:absolute !important; right:0 !important; border:0px solid red !important;
  max-width:150px, max-height:150px;}
 
 
@@ -363,26 +228,27 @@ Todd is single and has a dog-child and playful Boxer named “Zoe”, that takes
 
 
  
- <section className="child about1 outer1 section" style={{position:'relative', height:'', padding:'100px 2vw', overflow:''}}>
+ <section className="child about1 outer1 section" style={{position:'relative', height:'', padding:'100px 2vw', overflow:'', display:'flex'}}>
  
  {/* SKILLS TIMELINE */}
 
  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={false} delay={0} duration={2}>
    
-<div className="container1" style={{}}>
+{/* <div className="container1" style={{}}>
 <h3 className="logotype" style={{textAlign:'center', margin:'50px', fontSize:'250%',}}>
 Hats worn
 </h3>
-</div>
+</div> */}
 
-<div style={{ display:'flex',
+
+
+
+{/* <div style={{ display:'flex',
   flexWrap: 'wrap',
   flexDirection: 'row',
   justifyContent: 'spaceAround',
-  alignItems: 'auto',
-  alignContent: 'flexEnd',}}>
-
-<div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
+  alignItems: 'center',
+  alignContent: 'center',}}>
 
 <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'', padding:'', order:'1', position:'relative',}}>
 
@@ -405,7 +271,7 @@ Being a self-starter and self-learner are the basic fundamentals of a natural en
  
  
  
- <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
+ <div className="split nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
@@ -420,7 +286,7 @@ Back in the day, a webmaster learned that a full tool box was needed for web des
 
 </div>
 
- </div>
+ </div> 
 
 
 
@@ -428,7 +294,7 @@ Back in the day, a webmaster learned that a full tool box was needed for web des
 
  
  
- <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
+ <div className="split nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'', padding:'', order:'1', position:'relative',}}>
 
@@ -445,17 +311,17 @@ Over the years I&apos;ve spent inordinate amounts of time learning Typography, S
 
  </div>
 
- 
-  </div>
+ */}
+
 {/* end of first row */}
 
 
-<div style={{ display:'flex',
+<div style={{ display:'none',
   flexWrap: 'wrap',
   flexDirection: 'row',
   justifyContent: 'spaceAround',
-  alignItems: 'auto',
-  alignContent: 'flexEnd',}}>
+  alignItems: 'center',
+  alignContent: 'center',}}>
 
 
 
@@ -466,7 +332,102 @@ Over the years I&apos;ve spent inordinate amounts of time learning Typography, S
 
 
 
- <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'start', flexDirection:'', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
+ 
+ {/*  */}
+
+ <div className="split nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
+
+ <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
+
+ <div className="hats" style={{ textAlign:'center'}}>
+
+<h2>Entrepreneur</h2>
+  <Image className="color" alt="Entrepreneur Hat - Top Hat" filename="hats1.png" />
+
+
+</div>
+
+<p>
+Being a self-starter and self-learner are the basic fundamentals of a natural entrepreneur. I&apos;ve been involved both as a partner and a consultant to many businesses and I am able to see the forest through the trees, while keeping an eye on the bottom-line.
+</p>
+
+</div>
+
+ </div>
+{/*  */}
+
+
+
+ 
+ {/*  */}
+
+ <div className="split nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
+
+ <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
+
+ <div className="hats" style={{ textAlign:'center'}}>
+
+ <h2>Webmaster</h2>
+<Image className="color" alt="Webmaster Hat - Square Hat" filename="hats2.png" width="200px" height="200px" style={{borderColor:'transparent',}} />
+</div>
+
+<p>
+Back in the day, a webmaster learned that a full tool box was needed for web design and development. I learned UNIX, IIS, TCP/IP, Cpanel, and PHPMyadmin while entertaining myself primarily in the CGI-Bin directory.
+</p>
+
+</div>
+
+ </div>
+{/*  */}
+
+
+
+ 
+ {/*  */}
+
+ <div className="split nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
+
+ <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
+
+ <div className="hats" style={{ textAlign:'center'}}>
+
+ <h2>Designer</h2>
+<Image className="color" alt="Designer Hat - Beret" filename="hats3.png" width="200px" height="200px" style={{borderColor:'transparent',}} />
+</div>
+
+<p>
+Over the years I&apos;ve spent inordinate amounts of time learning Typography, Space and Composition. Learning is my personal design theory and I still strive to learn something new each day by trying things.
+</p>
+
+</div>
+
+ </div>
+{/*  */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/*  */}
+{/*  */}
+    {/*  */}
+
+
+{/*  */}
+ <div className="split nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'start', flexDirection:'', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
@@ -482,9 +443,10 @@ As the Internet became more complicated I immersed myself in different programmi
 
  </div>
  
+ {/*  */}
  
  
- <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
+ <div className="split nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
@@ -501,9 +463,9 @@ I&apos;ve been on the Internet since the beginning. I&apos;ve become adept at de
 
  </div>
  
- 
+ {/*  */}
 
- <div className="split1 nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
+ <div className="split nowrap1" style={{display:'flex', flex:'1 1 auto', flexBasis:'24%',  justifyContent:'space-around', flexDirection:'column', position:'relative',  width:'', margin:'0 1rem', padding:'0', borderRadius:'12px', overflow:'',}}>
 
  <div className="container3 speech1" style={{ width:'', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
@@ -519,6 +481,13 @@ Success online is not simply throwing numbers(visitors) at something. I&apos;ve 
 </div>
 
  </div>
+{/*  */}
+
+
+
+
+
+
 
 
 
