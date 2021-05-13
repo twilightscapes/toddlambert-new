@@ -69,8 +69,8 @@ h2{color:#dd4000}
 
 // body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
 .logofirst, .logocolor{font-size:10vw;}
-
-
+.resume{width:100% !important; display:block !important; display:block !important; padding-right:1rem;} 
+.resume .secondary1{ margin:0 !important; padding-right:1rem;}
 }
 
 
@@ -551,7 +551,7 @@ Resume
 
 
 
-<div className="" style={{display:'flex', justifyContent:'center', alignItems:'', position:'relative', width:'100%', margin:'0 2vw', background:'transparent'}}>
+<div className="resume" style={{display:'flex', justifyContent:'center', alignItems:'', position:'relative', width:'100%', margin:'0 2vw', background:'transparent'}}>
 
 
 

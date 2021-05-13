@@ -78,7 +78,7 @@ export default class Contact extends React.Component {
               >
 
 <h2 className="" style={{textAlign:'center', fontSize:'180%', margin:''}}>
-I love it when you fill this out!:
+I love it when you fill this out
 </h2>
 
                
