@@ -71,6 +71,8 @@ h2{color:#dd4000}
 .logofirst, .logocolor{font-size:10vw;}
 .resume{width:100% !important; display:block !important; display:block !important; padding-right:1rem;} 
 .resume .secondary1{ margin:0 !important; padding-right:1rem;}
+.portrait{display:block !important;}
+.aboutme{width:100% !important; display:block;}
 }
 
 
@@ -156,7 +158,7 @@ Conceptual Photography
 {/*  Panel 2 */}
 
 <section className="child split" style={{position:'relative', height:'100vh', overflow:'', display:'flex'}}>
-<div style={{width:'55vw'}}>
+<div className="aboutme" style={{width:'55vw'}}>
   <blockquote style={{padding:'1rem 0 1rem 5vw'}}>
 
   <h3 className="logotype" style={{textAlign:'center', margin:'5vh', fontSize:'250%',}}>
@@ -187,7 +189,7 @@ Todd is single and has a dog-child and playful Boxer named “Zoe”, that takes
 
 </div>
 
-  <div style={{width:'100%', maxWidth:'40vw', right:'', position:''}}>
+  <div className="portrait" style={{width:'100%', maxWidth:'40vw', right:'', position:''}}>
   <ScrollAnimation animateIn="fadeIn" animateOut="" initiallyVisible={false} animateOnce={true} animatePreScroll={false} delay={0} duration={3}>
 <BgImage filename="ahout-todd.jpg" style={{padding:'2rem',}} />
 </ScrollAnimation>
