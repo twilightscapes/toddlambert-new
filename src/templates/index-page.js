@@ -1,6 +1,8 @@
 import React from 'react'
 import Layout from '../components/Layout-noc'
 import Footer from '../components/Footer'
+import Helmet from 'react-helmet'
+import socialBanner from '../img/todd-camping.jpg'
 // import { Link } from 'gatsby'
 import ScrollAnimation from 'react-animate-on-scroll'
 import BgImage from '../components/BgImage'
@@ -90,9 +92,21 @@ h2{color:#dd4000}
 
 
 const HomePage = () => (
+
+  
   <Layout>
    <CustomBox>
-  
+   <Helmet>
+
+
+
+      <meta property='og:image' content={ socialBanner } />
+      <meta property='og:locale' content='en_US' />
+      <meta property='og:type' content='website' />
+      <meta property='og:title' content='Todd Lambert (the original) - Photographer | Web Developer and Product Designer' />
+      <meta property='og:description' content='Todd Lambert (the original) - Photographer | Web Developer and Product Designer' />
+      <meta property='og:url' content='https://toddlambert.com' />
+    </Helmet>
   
   <div className="logolink" style={{textAlign:'center', position:'absolute', top:'8vh', zIndex:'0', width:'98vw'}}><a title="Logo - Back To Home" href="/" style={{fontSize:'7vw',  textDecoration:'none'}}><span class="logofirst">todd</span> <span className="logocolor">lambert</span></a></div>
 

@@ -26,10 +26,10 @@ const TemplateWrapper = ({ children }) => {
         <title>{config.siteTitle}</title>
           <meta name='description' content={config.siteDescription} />
         
-        <meta property="og:type" content="business.business" />
+        {/* <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
-        <meta property="og:image" content={`${withPrefix("/")}img/og-image.png`} />
+        <meta property="og:image" content={`${withPrefix("/")}img/og-image.png`} /> */}
       </Helmet>
       
       

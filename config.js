@@ -4,7 +4,7 @@ module.exports = {
   siteLogo: '/icons/icon-512x512.png', // Logo used for SEO and manifest.
   siteUrl: 'https://toddlambert.com', // Domain of your website without pathPrefix.
   pathPrefix: '', // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-business/.
-  siteDescription: 'Effective marketing online and offline. Ad2 specializes in creating high end results for budget-minded local businesses.', // Website description used for RSS feeds/meta description tag.
+  siteDescription: 'Todd builds websites as his day job, and he would love to build your dream site, custom for you.', // Website description used for RSS feeds/meta description tag.
   siteRss: '/rss.xml',
   siteFBAppID: '', // FB Application ID for using app insights
   googleTagManagerID: '', // GTM tracking ID.

@@ -11,6 +11,7 @@ import { HTMLContent } from '../Content'
 import { FaRegAddressCard } from 'react-icons/fa'
 import { GoGear, GoTelescope } from 'react-icons/go'
 import ScrollAnimation from 'react-animate-on-scroll'
+import socialBanner from '../../img/todd-camping.jpg'
 // import PopNewsletter from '../PopNewsletter'
 // import ArticleTemplate from '../ArticleTemplate'
 // import { Link } from 'gatsby'
@@ -103,6 +104,12 @@ const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
       <html className="fullhead" />
+      <meta property='og:image' content={ socialBanner } />
+      <meta property='og:locale' content='en_US' />
+      <meta property='og:type' content='website' />
+      <meta property='og:title' content='Todd Lambert (the original) - Photographer | Web Developer and Product Designer' />
+      <meta property='og:description' content='Todd Lambert (the original) - Photographer | Web Developer and Product Designer' />
+      <meta property='og:url' content='https://toddlambert.com' />
     </Helmet>
     
     
